@@ -1,0 +1,25 @@
+D:\CSC 440\MtG Project\MtG Project\bin\Debug\MtG Project.exe.config
+D:\CSC 440\MtG Project\MtG Project\bin\Debug\MtG Project.exe
+D:\CSC 440\MtG Project\MtG Project\bin\Debug\MtG Project.pdb
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG Project.csprojAssemblyReference.cache
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG_Project.HomePage.resources
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG_Project.CollectionMenu.resources
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG_Project.Playtest.resources
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG_Project.Properties.Resources.resources
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.GenerateResource.cache
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG Project.exe
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
+D:\CSC 440\MtG Project\MtG Project\obj\Debug\MtG_Project.Deck_Menu.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\bin\Debug\MtG Project.exe.config
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\bin\Debug\MtG Project.exe
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\bin\Debug\MtG Project.pdb
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.csprojAssemblyReference.cache
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG_Project.Deck_Menu.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG_Project.HomePage.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG_Project.CollectionMenu.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG_Project.Playtest.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG_Project.Properties.Resources.resources
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.GenerateResource.cache
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CoreCompileInputs.cache
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.exe
+C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
