@@ -61,7 +61,7 @@
             this.deckMenuButton.BackColor = System.Drawing.Color.Red;
             this.deckMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deckMenuButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.deckMenuButton.Location = new System.Drawing.Point(270, 178);
+            this.deckMenuButton.Location = new System.Drawing.Point(526, 178);
             this.deckMenuButton.Name = "deckMenuButton";
             this.deckMenuButton.Size = new System.Drawing.Size(164, 117);
             this.deckMenuButton.TabIndex = 2;
