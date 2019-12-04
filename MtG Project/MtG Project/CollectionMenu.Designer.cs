@@ -30,8 +30,6 @@
         {
             this.addNewButton = new System.Windows.Forms.Button();
             this.saveAdditionButton = new System.Windows.Forms.Button();
-            this.cancelAdditionButton = new System.Windows.Forms.Button();
-            this.exitScreenButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.collectionListBox = new System.Windows.Forms.ListBox();
             this.cardNameLabel = new System.Windows.Forms.Label();
@@ -43,6 +41,8 @@
             this.cardTypeTextBox = new System.Windows.Forms.TextBox();
             this.cardSubtypeTextBox = new System.Windows.Forms.TextBox();
             this.viewCollectionButton = new System.Windows.Forms.Button();
+            this.cancelAdditionButton = new System.Windows.Forms.Button();
+            this.exitScreenButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addNewButton
@@ -51,7 +51,7 @@
             this.addNewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.addNewButton.Location = new System.Drawing.Point(9, 304);
-            this.addNewButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addNewButton.Margin = new System.Windows.Forms.Padding(2);
             this.addNewButton.Name = "addNewButton";
             this.addNewButton.Size = new System.Drawing.Size(98, 52);
             this.addNewButton.TabIndex = 0;
@@ -66,7 +66,7 @@
             this.saveAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveAdditionButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.saveAdditionButton.Location = new System.Drawing.Point(112, 304);
-            this.saveAdditionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.saveAdditionButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveAdditionButton.Name = "saveAdditionButton";
             this.saveAdditionButton.Size = new System.Drawing.Size(98, 52);
             this.saveAdditionButton.TabIndex = 1;
@@ -75,41 +75,13 @@
             this.saveAdditionButton.Visible = false;
             this.saveAdditionButton.Click += new System.EventHandler(this.SaveAdditionButton_Click);
             // 
-            // cancelAdditionButton
-            // 
-            this.cancelAdditionButton.BackColor = System.Drawing.Color.White;
-            this.cancelAdditionButton.Enabled = false;
-            this.cancelAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelAdditionButton.Location = new System.Drawing.Point(334, 304);
-            this.cancelAdditionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cancelAdditionButton.Name = "cancelAdditionButton";
-            this.cancelAdditionButton.Size = new System.Drawing.Size(98, 52);
-            this.cancelAdditionButton.TabIndex = 2;
-            this.cancelAdditionButton.Text = "Cancel";
-            this.cancelAdditionButton.UseVisualStyleBackColor = false;
-            this.cancelAdditionButton.Click += new System.EventHandler(this.CancelAdditionButton_Click);
-            // 
-            // exitScreenButton
-            // 
-            this.exitScreenButton.BackColor = System.Drawing.Color.Blue;
-            this.exitScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitScreenButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.exitScreenButton.Location = new System.Drawing.Point(437, 304);
-            this.exitScreenButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.exitScreenButton.Name = "exitScreenButton";
-            this.exitScreenButton.Size = new System.Drawing.Size(98, 52);
-            this.exitScreenButton.TabIndex = 4;
-            this.exitScreenButton.Text = "Exit";
-            this.exitScreenButton.UseVisualStyleBackColor = false;
-            this.exitScreenButton.Click += new System.EventHandler(this.ExitScreenButton_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(232, 304);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 52);
             this.button1.TabIndex = 5;
@@ -120,7 +92,7 @@
             // 
             this.collectionListBox.FormattingEnabled = true;
             this.collectionListBox.Location = new System.Drawing.Point(9, 10);
-            this.collectionListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.collectionListBox.Margin = new System.Windows.Forms.Padding(2);
             this.collectionListBox.Name = "collectionListBox";
             this.collectionListBox.Size = new System.Drawing.Size(305, 251);
             this.collectionListBox.TabIndex = 6;
@@ -140,7 +112,7 @@
             // cardNameTextBox
             // 
             this.cardNameTextBox.Location = new System.Drawing.Point(373, 10);
-            this.cardNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardNameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.cardNameTextBox.Name = "cardNameTextBox";
             this.cardNameTextBox.Size = new System.Drawing.Size(219, 20);
             this.cardNameTextBox.TabIndex = 8;
@@ -160,7 +132,7 @@
             // manaCostTextBox
             // 
             this.manaCostTextBox.Location = new System.Drawing.Point(404, 41);
-            this.manaCostTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.manaCostTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.manaCostTextBox.Name = "manaCostTextBox";
             this.manaCostTextBox.Size = new System.Drawing.Size(76, 20);
             this.manaCostTextBox.TabIndex = 10;
@@ -191,7 +163,7 @@
             // cardTypeTextBox
             // 
             this.cardTypeTextBox.Location = new System.Drawing.Point(404, 73);
-            this.cardTypeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardTypeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.cardTypeTextBox.Name = "cardTypeTextBox";
             this.cardTypeTextBox.Size = new System.Drawing.Size(76, 20);
             this.cardTypeTextBox.TabIndex = 13;
@@ -200,7 +172,7 @@
             // cardSubtypeTextBox
             // 
             this.cardSubtypeTextBox.Location = new System.Drawing.Point(412, 103);
-            this.cardSubtypeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cardSubtypeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.cardSubtypeTextBox.Name = "cardSubtypeTextBox";
             this.cardSubtypeTextBox.Size = new System.Drawing.Size(76, 20);
             this.cardSubtypeTextBox.TabIndex = 14;
@@ -212,13 +184,41 @@
             this.viewCollectionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewCollectionButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.viewCollectionButton.Location = new System.Drawing.Point(122, 304);
-            this.viewCollectionButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewCollectionButton.Margin = new System.Windows.Forms.Padding(2);
             this.viewCollectionButton.Name = "viewCollectionButton";
             this.viewCollectionButton.Size = new System.Drawing.Size(98, 51);
             this.viewCollectionButton.TabIndex = 15;
             this.viewCollectionButton.Text = "View";
             this.viewCollectionButton.UseVisualStyleBackColor = false;
             this.viewCollectionButton.Click += new System.EventHandler(this.ViewCollectionButton_Click);
+            // 
+            // cancelAdditionButton
+            // 
+            this.cancelAdditionButton.BackColor = System.Drawing.Color.White;
+            this.cancelAdditionButton.Enabled = false;
+            this.cancelAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancelAdditionButton.Location = new System.Drawing.Point(334, 304);
+            this.cancelAdditionButton.Margin = new System.Windows.Forms.Padding(2);
+            this.cancelAdditionButton.Name = "cancelAdditionButton";
+            this.cancelAdditionButton.Size = new System.Drawing.Size(98, 52);
+            this.cancelAdditionButton.TabIndex = 2;
+            this.cancelAdditionButton.Text = "Cancel";
+            this.cancelAdditionButton.UseVisualStyleBackColor = false;
+            this.cancelAdditionButton.Click += new System.EventHandler(this.CancelAdditionButton_Click);
+            // 
+            // exitScreenButton
+            // 
+            this.exitScreenButton.BackColor = System.Drawing.Color.Blue;
+            this.exitScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitScreenButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.exitScreenButton.Location = new System.Drawing.Point(437, 304);
+            this.exitScreenButton.Margin = new System.Windows.Forms.Padding(2);
+            this.exitScreenButton.Name = "exitScreenButton";
+            this.exitScreenButton.Size = new System.Drawing.Size(98, 52);
+            this.exitScreenButton.TabIndex = 4;
+            this.exitScreenButton.Text = "Exit";
+            this.exitScreenButton.UseVisualStyleBackColor = false;
+            this.exitScreenButton.Click += new System.EventHandler(this.ExitScreenButton_Click);
             // 
             // CollectionMenu
             // 
@@ -240,7 +240,7 @@
             this.Controls.Add(this.cancelAdditionButton);
             this.Controls.Add(this.saveAdditionButton);
             this.Controls.Add(this.addNewButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CollectionMenu";
             this.Text = "Collection Menu";
             this.Load += new System.EventHandler(this.CollectionMenu_Load);
@@ -253,8 +253,6 @@
 
         private System.Windows.Forms.Button addNewButton;
         private System.Windows.Forms.Button saveAdditionButton;
-        private System.Windows.Forms.Button cancelAdditionButton;
-        private System.Windows.Forms.Button exitScreenButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox collectionListBox;
         private System.Windows.Forms.Label cardNameLabel;
@@ -266,5 +264,7 @@
         private System.Windows.Forms.TextBox cardTypeTextBox;
         private System.Windows.Forms.TextBox cardSubtypeTextBox;
         private System.Windows.Forms.Button viewCollectionButton;
+        private System.Windows.Forms.Button cancelAdditionButton;
+        private System.Windows.Forms.Button exitScreenButton;
     }
 }

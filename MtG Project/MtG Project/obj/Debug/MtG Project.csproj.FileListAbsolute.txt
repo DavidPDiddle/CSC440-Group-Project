@@ -23,3 +23,15 @@ C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.cs
 C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CoreCompileInputs.cache
 C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.exe
 C:\Users\15022\Documents\CSC440\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csprojAssemblyReference.cache
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.exe
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\bin\Debug\MtG Project.exe.config
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\bin\Debug\MtG Project.exe
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\bin\Debug\MtG Project.pdb
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Deck_Menu.resources
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG_Project.HomePage.resources
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG_Project.CollectionMenu.resources
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Properties.Resources.resources
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.GenerateResource.cache
+C:\Users\EKUStudent\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CoreCompileInputs.cache
