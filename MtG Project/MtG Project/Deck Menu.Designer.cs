@@ -40,12 +40,14 @@
             this.deckContentsBox = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.exitScreenButton = new System.Windows.Forms.Button();
-            this.cancelAdditionButton = new System.Windows.Forms.Button();
             this.saveAdditionButton = new System.Windows.Forms.Button();
             this.addNewButton = new System.Windows.Forms.Button();
             this.deckListBox = new System.Windows.Forms.ListBox();
-            this.allCardsButton = new System.Windows.Forms.Button();
             this.fromCollectionButton = new System.Windows.Forms.Button();
+            this.cardImage = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.cardImage)).BeginInit();
             this.SuspendLayout();
             // 
             // viewDeckButton
@@ -53,10 +55,10 @@
             this.viewDeckButton.BackColor = System.Drawing.Color.Silver;
             this.viewDeckButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewDeckButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.viewDeckButton.Location = new System.Drawing.Point(111, 305);
+            this.viewDeckButton.Location = new System.Drawing.Point(363, 329);
             this.viewDeckButton.Margin = new System.Windows.Forms.Padding(2);
             this.viewDeckButton.Name = "viewDeckButton";
-            this.viewDeckButton.Size = new System.Drawing.Size(98, 51);
+            this.viewDeckButton.Size = new System.Drawing.Size(109, 54);
             this.viewDeckButton.TabIndex = 30;
             this.viewDeckButton.Text = "View";
             this.viewDeckButton.UseVisualStyleBackColor = false;
@@ -145,7 +147,7 @@
             // deckContentsBox
             // 
             this.deckContentsBox.FormattingEnabled = true;
-            this.deckContentsBox.Location = new System.Drawing.Point(9, 10);
+            this.deckContentsBox.Location = new System.Drawing.Point(8, 32);
             this.deckContentsBox.Margin = new System.Windows.Forms.Padding(2);
             this.deckContentsBox.Name = "deckContentsBox";
             this.deckContentsBox.Size = new System.Drawing.Size(305, 251);
@@ -157,10 +159,10 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(214, 304);
+            this.button1.Location = new System.Drawing.Point(712, 328);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 52);
+            this.button1.Size = new System.Drawing.Size(109, 54);
             this.button1.TabIndex = 20;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
@@ -170,28 +172,14 @@
             this.exitScreenButton.BackColor = System.Drawing.Color.Blue;
             this.exitScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitScreenButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.exitScreenButton.Location = new System.Drawing.Point(420, 304);
+            this.exitScreenButton.Location = new System.Drawing.Point(596, 329);
             this.exitScreenButton.Margin = new System.Windows.Forms.Padding(2);
             this.exitScreenButton.Name = "exitScreenButton";
-            this.exitScreenButton.Size = new System.Drawing.Size(98, 52);
+            this.exitScreenButton.Size = new System.Drawing.Size(112, 54);
             this.exitScreenButton.TabIndex = 19;
             this.exitScreenButton.Text = "Exit";
             this.exitScreenButton.UseVisualStyleBackColor = false;
             this.exitScreenButton.Click += new System.EventHandler(this.ExitScreenButton_Click);
-            // 
-            // cancelAdditionButton
-            // 
-            this.cancelAdditionButton.BackColor = System.Drawing.Color.White;
-            this.cancelAdditionButton.Enabled = false;
-            this.cancelAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancelAdditionButton.Location = new System.Drawing.Point(317, 304);
-            this.cancelAdditionButton.Margin = new System.Windows.Forms.Padding(2);
-            this.cancelAdditionButton.Name = "cancelAdditionButton";
-            this.cancelAdditionButton.Size = new System.Drawing.Size(98, 52);
-            this.cancelAdditionButton.TabIndex = 18;
-            this.cancelAdditionButton.Text = "Cancel";
-            this.cancelAdditionButton.UseVisualStyleBackColor = false;
-            this.cancelAdditionButton.Click += new System.EventHandler(this.CancelAdditionButton_Click);
             // 
             // saveAdditionButton
             // 
@@ -199,10 +187,10 @@
             this.saveAdditionButton.Enabled = false;
             this.saveAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveAdditionButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.saveAdditionButton.Location = new System.Drawing.Point(112, 304);
+            this.saveAdditionButton.Location = new System.Drawing.Point(122, 325);
             this.saveAdditionButton.Margin = new System.Windows.Forms.Padding(2);
             this.saveAdditionButton.Name = "saveAdditionButton";
-            this.saveAdditionButton.Size = new System.Drawing.Size(98, 52);
+            this.saveAdditionButton.Size = new System.Drawing.Size(109, 57);
             this.saveAdditionButton.TabIndex = 17;
             this.saveAdditionButton.Text = "Save";
             this.saveAdditionButton.UseVisualStyleBackColor = false;
@@ -214,10 +202,10 @@
             this.addNewButton.BackColor = System.Drawing.Color.DarkGreen;
             this.addNewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addNewButton.Location = new System.Drawing.Point(9, 304);
+            this.addNewButton.Location = new System.Drawing.Point(250, 325);
             this.addNewButton.Margin = new System.Windows.Forms.Padding(2);
             this.addNewButton.Name = "addNewButton";
-            this.addNewButton.Size = new System.Drawing.Size(98, 52);
+            this.addNewButton.Size = new System.Drawing.Size(109, 57);
             this.addNewButton.TabIndex = 16;
             this.addNewButton.Text = "Add New";
             this.addNewButton.UseVisualStyleBackColor = false;
@@ -226,48 +214,62 @@
             // deckListBox
             // 
             this.deckListBox.FormattingEnabled = true;
-            this.deckListBox.Location = new System.Drawing.Point(9, 41);
+            this.deckListBox.Location = new System.Drawing.Point(317, 149);
             this.deckListBox.Margin = new System.Windows.Forms.Padding(2);
             this.deckListBox.Name = "deckListBox";
-            this.deckListBox.Size = new System.Drawing.Size(304, 121);
+            this.deckListBox.Size = new System.Drawing.Size(304, 134);
             this.deckListBox.TabIndex = 31;
             this.deckListBox.SelectedIndexChanged += new System.EventHandler(this.deckListBox_SelectedIndexChanged);
-            // 
-            // allCardsButton
-            // 
-            this.allCardsButton.BackColor = System.Drawing.Color.Blue;
-            this.allCardsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.allCardsButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.allCardsButton.Location = new System.Drawing.Point(140, 166);
-            this.allCardsButton.Margin = new System.Windows.Forms.Padding(2);
-            this.allCardsButton.Name = "allCardsButton";
-            this.allCardsButton.Size = new System.Drawing.Size(98, 52);
-            this.allCardsButton.TabIndex = 32;
-            this.allCardsButton.Text = "All Cards";
-            this.allCardsButton.UseVisualStyleBackColor = false;
-            this.allCardsButton.Click += new System.EventHandler(this.allCardsButton_Click);
             // 
             // fromCollectionButton
             // 
             this.fromCollectionButton.BackColor = System.Drawing.Color.Red;
             this.fromCollectionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromCollectionButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.fromCollectionButton.Location = new System.Drawing.Point(334, 166);
+            this.fromCollectionButton.Location = new System.Drawing.Point(480, 326);
             this.fromCollectionButton.Margin = new System.Windows.Forms.Padding(2);
             this.fromCollectionButton.Name = "fromCollectionButton";
-            this.fromCollectionButton.Size = new System.Drawing.Size(98, 52);
+            this.fromCollectionButton.Size = new System.Drawing.Size(112, 57);
             this.fromCollectionButton.TabIndex = 33;
-            this.fromCollectionButton.Text = "From Collection";
+            this.fromCollectionButton.Text = "Missing From Collection";
             this.fromCollectionButton.UseVisualStyleBackColor = false;
             this.fromCollectionButton.Click += new System.EventHandler(this.fromCollectionButton_Click);
+            // 
+            // cardImage
+            // 
+            this.cardImage.Location = new System.Drawing.Point(672, 32);
+            this.cardImage.Name = "cardImage";
+            this.cardImage.Size = new System.Drawing.Size(209, 249);
+            this.cardImage.TabIndex = 34;
+            this.cardImage.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "List of Decks";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(319, 131);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Current Deck";
             // 
             // Deck_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(924, 389);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cardImage);
             this.Controls.Add(this.fromCollectionButton);
-            this.Controls.Add(this.allCardsButton);
             this.Controls.Add(this.deckListBox);
             this.Controls.Add(this.viewDeckButton);
             this.Controls.Add(this.cardSubtypeTextBox);
@@ -281,12 +283,12 @@
             this.Controls.Add(this.deckContentsBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.exitScreenButton);
-            this.Controls.Add(this.cancelAdditionButton);
             this.Controls.Add(this.saveAdditionButton);
             this.Controls.Add(this.addNewButton);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Deck_Menu";
             this.Text = "Deck Menu";
+            ((System.ComponentModel.ISupportInitialize)(this.cardImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,11 +308,12 @@
         private System.Windows.Forms.ListBox deckContentsBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button exitScreenButton;
-        private System.Windows.Forms.Button cancelAdditionButton;
         private System.Windows.Forms.Button saveAdditionButton;
         private System.Windows.Forms.Button addNewButton;
         private System.Windows.Forms.ListBox deckListBox;
-        private System.Windows.Forms.Button allCardsButton;
         private System.Windows.Forms.Button fromCollectionButton;
+        private System.Windows.Forms.PictureBox cardImage;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
