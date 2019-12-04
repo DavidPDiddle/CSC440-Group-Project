@@ -93,23 +93,6 @@ namespace MtG_Project
             deckListBox.Visible = true;
         }
 
-        private void CancelAdditionButton_Click(object sender, EventArgs e)
-        {
-            saveAdditionButton.Visible = false;
-            deckContentsBox.Visible = false;
-            cancelAdditionButton.Visible = false;
-            cardNameLabel.Visible = false;
-            cardNameTextBox.Visible = false;
-            cardTypeLabel.Visible = false;
-            cardTypeTextBox.Visible = false;
-            cardSubtypeLabel.Visible = false;
-            cardSubtypeTextBox.Visible = false;
-
-            viewDeckButton.Visible = true;
-            addNewButton.Visible = true;
-            deckListBox.Visible = true;
-        }
-
         private void ExitScreenButton_Click(object sender, EventArgs e)
         {
             Close();
@@ -120,18 +103,6 @@ namespace MtG_Project
 
         }
 
-        private void allCardsButton_Click(object sender, EventArgs e)
-        {
-            viewDeckButton.Visible = true;
-            addNewButton.Visible = true;
-            saveAdditionButton.Visible = false;
-            cancelAdditionButton.Visible = true;
-            exitScreenButton.Visible = true;
-            allCardsButton.Visible = false;
-            fromCollectionButton.Visible = false;
-
-        }
-
         private void fromCollectionButton_Click(object sender, EventArgs e)
         {
             viewDeckButton.Visible = true;
@@ -139,8 +110,12 @@ namespace MtG_Project
             saveAdditionButton.Visible = false;
             cancelAdditionButton.Visible = true;
             exitScreenButton.Visible = true;
-            allCardsButton.Visible = false;
             fromCollectionButton.Visible = false;
+        }
+
+        private void CancelAdditionButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

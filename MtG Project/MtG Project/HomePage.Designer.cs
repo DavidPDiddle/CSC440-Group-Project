@@ -51,7 +51,7 @@
             this.collectionMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.collectionMenuButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.collectionMenuButton.Location = new System.Drawing.Point(50, 116);
-            this.collectionMenuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.collectionMenuButton.Margin = new System.Windows.Forms.Padding(2);
             this.collectionMenuButton.Name = "collectionMenuButton";
             this.collectionMenuButton.Size = new System.Drawing.Size(109, 76);
             this.collectionMenuButton.TabIndex = 1;
@@ -65,7 +65,7 @@
             this.deckMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deckMenuButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.deckMenuButton.Location = new System.Drawing.Point(180, 116);
-            this.deckMenuButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deckMenuButton.Margin = new System.Windows.Forms.Padding(2);
             this.deckMenuButton.Name = "deckMenuButton";
             this.deckMenuButton.Size = new System.Drawing.Size(109, 76);
             this.deckMenuButton.TabIndex = 2;
@@ -79,7 +79,7 @@
             this.playTestButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playTestButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.playTestButton.Location = new System.Drawing.Point(300, 116);
-            this.playTestButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.playTestButton.Margin = new System.Windows.Forms.Padding(2);
             this.playTestButton.Name = "playTestButton";
             this.playTestButton.Size = new System.Drawing.Size(109, 76);
             this.playTestButton.TabIndex = 3;
@@ -96,9 +96,10 @@
             this.Controls.Add(this.deckMenuButton);
             this.Controls.Add(this.collectionMenuButton);
             this.Controls.Add(this.titleLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomePage";
             this.Text = "Home Page";
+            this.Load += new System.EventHandler(this.HomePage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

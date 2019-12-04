@@ -31,5 +31,10 @@ namespace MtG_Project
         {
             new Playtest().Show();
         }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
