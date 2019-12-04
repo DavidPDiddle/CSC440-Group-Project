@@ -27,9 +27,5 @@ namespace MtG_Project
             new Deck_Menu().Show();
         }
 
-        private void playTestButton_Click(object sender, EventArgs e)
-        {
-            new Playtest().Show();
-        }
     }
 }

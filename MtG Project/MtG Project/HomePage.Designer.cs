@@ -48,7 +48,7 @@
             this.collectionMenuButton.BackColor = System.Drawing.Color.Blue;
             this.collectionMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.collectionMenuButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.collectionMenuButton.Location = new System.Drawing.Point(75, 178);
+            this.collectionMenuButton.Location = new System.Drawing.Point(170, 178);
             this.collectionMenuButton.Name = "collectionMenuButton";
             this.collectionMenuButton.Size = new System.Drawing.Size(164, 117);
             this.collectionMenuButton.TabIndex = 1;

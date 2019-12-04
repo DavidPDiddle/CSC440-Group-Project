@@ -52,6 +52,12 @@
     <Compile Include="Deck Menu.Designer.cs">
       <DependentUpon>Deck Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="CollectionMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollectionMaker.Designer.cs">
+      <DependentUpon>CollectionMaker.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Deck Menu.resx">
       <DependentUpon>Deck Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CollectionMaker.resx">
+      <DependentUpon>CollectionMaker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
