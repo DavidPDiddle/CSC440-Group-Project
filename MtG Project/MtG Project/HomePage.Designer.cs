@@ -61,7 +61,7 @@
             this.collectionMenuButton.Name = "collectionMenuButton";
             this.collectionMenuButton.Size = new System.Drawing.Size(100, 97);
             this.collectionMenuButton.TabIndex = 1;
-            this.collectionMenuButton.Text = "Deck Menu";
+            this.collectionMenuButton.Text = "Collection Menu";
             this.collectionMenuButton.UseVisualStyleBackColor = true;
             this.collectionMenuButton.Click += new System.EventHandler(this.CollectionMenuButton_Click);
             // 
@@ -75,7 +75,7 @@
             this.deckMenuButton.Name = "deckMenuButton";
             this.deckMenuButton.Size = new System.Drawing.Size(103, 103);
             this.deckMenuButton.TabIndex = 2;
-            this.deckMenuButton.Text = "Collection Menu";
+            this.deckMenuButton.Text = "Deck Menu";
             this.deckMenuButton.UseVisualStyleBackColor = true;
             this.deckMenuButton.Click += new System.EventHandler(this.DeckMenuButton_Click);
             // 
