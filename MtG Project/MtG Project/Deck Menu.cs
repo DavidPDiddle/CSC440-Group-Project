@@ -7,7 +7,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace MtG_Project
 {
@@ -20,6 +21,8 @@ namespace MtG_Project
         public Deck_Menu()
         {
             InitializeComponent();
+
+            // when the deck editor loads, populate the field of decks with deck names
 
 
             //String connectionString;
@@ -72,18 +75,11 @@ namespace MtG_Project
 
             //command.Dispose();
             //cnn.Close();
-
-            deckContentsBox.Text += "Grobby     5RR     Creature       Goblin       4/5";
-            deckListBox.Text += "Eggs Sunnyside Up";
-            deckListBox.Text += "Cawblade";
-            deckListBox.Text += "Jund Midrange";
-            deckListBox.Text += "5-Color Planeswalkers";
-            deckListBox.Text += "Jeskai Group Hug";
-
            
 
-        }
 
+        }
+        // adds a new deck to the json file
         private void AddNewButton_Click(object sender, EventArgs e)
         {
            
