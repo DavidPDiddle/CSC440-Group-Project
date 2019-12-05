@@ -58,3 +58,5 @@ C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Pr
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.GenerateResource.cache
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.exe
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
+C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CopyComplete

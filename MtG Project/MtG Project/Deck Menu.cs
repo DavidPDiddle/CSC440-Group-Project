@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
@@ -18,6 +19,10 @@ namespace MtG_Project
         // If the person selects All Cards, then they take from the API. If they select from Collection, then the
         // program will only use the JSON files.
         Boolean allCards;
+
+        object sender;
+        EventArgs e;
+
         public Deck_Menu()
         {
             InitializeComponent();
@@ -82,7 +87,13 @@ namespace MtG_Project
         // adds a new deck to the json file
         private void AddNewButton_Click(object sender, EventArgs e)
         {
-           
+            // creates a new deck titled 'New Deck' and populates that into the list view
+            var json_file = "deck_lists.json";
+            // get the existing json data out of that file
+            var json_data = System.IO.File.ReadAllText(json_file);
+            // deserialize the json object
+            var deck_lists = JsonConvert.DeserializeObject(json_data);
+
         }
 
         private void ViewCollectionButton_Click(object sender, EventArgs e)
