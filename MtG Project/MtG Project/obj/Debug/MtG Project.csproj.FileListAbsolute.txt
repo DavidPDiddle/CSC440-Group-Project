@@ -60,3 +60,16 @@ C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Pr
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\bin\Debug\Newtonsoft.Json.dll
 C:\Users\David\Source\Repos\DavidPDiddle\CSC440-Group-Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CopyComplete
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.csprojAssemblyReference.cache
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Deck_Menu.resources
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.HomePage.resources
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.CollectionMenu.resources
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Properties.Resources.resources
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.GenerateResource.cache
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.exe
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.pdb
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\MtG Project.exe.config
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\MtG Project.exe
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\MtG Project.pdb
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CopyComplete

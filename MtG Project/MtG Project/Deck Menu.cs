@@ -1,8 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +15,6 @@ using Newtonsoft.Json.Serialization;
 
 namespace MtG_Project
 {
-
     public partial class Deck_Menu : Form
     {
         // If the person selects All Cards, then they take from the API. If they select from Collection, then the
@@ -84,15 +85,30 @@ namespace MtG_Project
 
 
         }
+        // runs an external python script and gets the stdout as a result string
+        public string Run_Cmd(string cmd, string args)
+        {
+            ProcessStartInfo start = new ProcessStartInfo();
+            start.FileName = "C:/Python/python.exe";
+            start.Arguments = string.Format("\"{0}\" \"{1}\"", cmd, args);
+            start.UseShellExecute = false;
+            start.CreateNoWindow = true;
+            start.RedirectStandardOutput = true;
+            start.RedirectStandardError = true;
+            using (Process process = Process.Start(start))
+            {
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string stderr = process.StandardError.ReadToEnd();
+                    string result = reader.ReadToEnd();
+                    return result;
+                }
+            }
+        }
+
         // adds a new deck to the json file
         private void AddNewButton_Click(object sender, EventArgs e)
         {
-            // creates a new deck titled 'New Deck' and populates that into the list view
-            var json_file = "deck_lists.json";
-            // get the existing json data out of that file
-            var json_data = System.IO.File.ReadAllText(json_file);
-            // deserialize the json object
-            var deck_lists = JsonConvert.DeserializeObject(json_data);
 
         }
 
