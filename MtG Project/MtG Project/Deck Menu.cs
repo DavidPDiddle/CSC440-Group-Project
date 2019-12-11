@@ -27,6 +27,7 @@ namespace MtG_Project
         public Deck_Menu()
         {
             InitializeComponent();
+            LoadDecks(sender, e);
 
             // when the deck editor loads, populate the field of decks with deck names
 
@@ -86,24 +87,34 @@ namespace MtG_Project
 
         }
         // runs an external python script and gets the stdout as a result string
-        public string Run_Cmd(string cmd, string args)
+        public List<string> Run_Cmd(string cmd)
         {
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = "C:/Python/python.exe";
-            start.Arguments = string.Format("\"{0}\" \"{1}\"", cmd, args);
+            start.Arguments = string.Format("\"{0}\"", cmd);
             start.UseShellExecute = false;
             start.CreateNoWindow = true;
             start.RedirectStandardOutput = true;
             start.RedirectStandardError = true;
+
+            List<string> deck_names = new List<string>();
+
             using (Process process = Process.Start(start))
             {
                 using (StreamReader reader = process.StandardOutput)
                 {
                     string stderr = process.StandardError.ReadToEnd();
                     string result = reader.ReadToEnd();
-                    return result;
+                    deck_names.Add(result);
                 }
             }
+
+            return deck_names;
+        }
+        // load the list of decks when the page is loaded
+        public void LoadDecks(object sender, EventArgs e)
+        {
+            deckListBox.DataSource = Run_Cmd("C:/Users/15022/Documents/CSC440/read_decks.py");
         }
 
         // adds a new deck to the json file
