@@ -17,9 +17,6 @@ namespace MtG_Project
 {
     public partial class Deck_Menu : Form
     {
-        // If the person selects All Cards, then they take from the API. If they select from Collection, then the
-        // program will only use the JSON files.
-        Boolean allCards;
 
         object sender;
         EventArgs e;
@@ -28,65 +25,8 @@ namespace MtG_Project
         {
             InitializeComponent();
             LoadDecks(sender, e);
-
-            // when the deck editor loads, populate the field of decks with deck names
-
-
-            //String connectionString;
-            //SqlConnection cnn;
-
-            //// Data source = name of server, initial catalog = name of database, user id and password are
-            //// self-explanatory.
-            //connectionString = @"Data Source=WIN-50GP30FGO75;Initial Catalog=Demodb;User ID=sa;Password=demo123";
-            //cnn = new SqlConnection(connectionString);
-            //cnn.Open();
-            //MessageBox.Show("Connection Open!");
-            //// Continue from
-            //// https://www.guru99.com/c-sharp-access-database.html
-
-            //// Define variables
-            //SqlCommand command;
-            //SqlDataReader datareader;
-            //String sql, Output = "";
-
-            //// Define the SQL statement
-            //sql = "SELECT TutorialID, TutorialName from demotb";
-
-            //// command statement
-            //command = new SqlCommand(sql, cnn);
-
-            //// Define the data reader
-            //datareader = command.ExecuteReader();
-
-            //// Get results
-            //while (datareader.Read())
-            //{
-            //    Output = Output + datareader.GetValue(0) + " - " + datareader.GetValue(1) + "\n";
-            //}
-
-            //MessageBox.Show(Output);
-
-            //datareader.Close();
-            //command.Dispose();
-            //cnn.Close();
-
-            //// For putting stuff into the table
-            //// Reuse SqlCommand command
-            //SqlDataAdapter adapter = new SqlDataAdapter();
-            //String sql2 = "";
-            //sql2 = "INSERT into demotb (TutorialID, TutorialName) values(3,'" + "VB.Net" + "')";
-
-            //command = new SqlCommand(sql2, cnn);
-            //adapter.InsertCommand = new SqlCommand(sql2, cnn);
-            //adapter.InsertCommand.ExecuteNonQuery();
-
-            //command.Dispose();
-            //cnn.Close();
-           
-
-
         }
-        // runs an external python script and gets the stdout as a result string
+        // runs an external python script and gets the stdout as a result array of strings
         public List<string> Run_Cmd(string cmd)
         {
             ProcessStartInfo start = new ProcessStartInfo();
@@ -94,6 +34,7 @@ namespace MtG_Project
             start.Arguments = string.Format("\"{0}\"", cmd);
             start.UseShellExecute = false;
             start.CreateNoWindow = true;
+            start.RedirectStandardInput = true;
             start.RedirectStandardOutput = true;
             start.RedirectStandardError = true;
 
@@ -105,12 +46,30 @@ namespace MtG_Project
                 {
                     string stderr = process.StandardError.ReadToEnd();
                     string result = reader.ReadToEnd();
-                    deck_names.Add(result);
+                    using (StringReader stringReader = new StringReader(result))
+                    {
+                        string line;
+                        while ((line = stringReader.ReadLine()) != null)
+                        {
+                            deck_names.Add(line);
+                        }
+                    }
                 }
             }
 
             return deck_names;
         }
+        // load the image from the Scryfall uri
+        public void LoadImg(string card_name)
+        {
+            // write the card name to a file so the python script can read it
+            System.IO.File.WriteAllText("C:/Users/15022/Documents/CSC440/card_name.txt", deckContentsBox.SelectedItem.ToString());
+            // run a python file to return the uri
+            string card_uri = Run_Cmd("C:/Users/15022/Documents/CSC440/get_card_uri.py")[0];
+            // load the image
+            pictureBox1.Load(card_uri);
+        }
+
         // load the list of decks when the page is loaded
         public void LoadDecks(object sender, EventArgs e)
         {
@@ -133,8 +92,6 @@ namespace MtG_Project
            
         }
 
-       
-
         private void ExitScreenButton_Click(object sender, EventArgs e)
         {
             Close();
@@ -142,7 +99,9 @@ namespace MtG_Project
 
         private void deckListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            // write the deck name to a file so that the python file can read it
+            System.IO.File.WriteAllText("C:/Users/15022/Documents/CSC440/deck_name.txt", deckListBox.SelectedItem.ToString());
+            deckContentsBox.DataSource = Run_Cmd("C:/Users/15022/Documents/CSC440/get_deck_contents.py");
         }
 
         private void allCardsButton_Click(object sender, EventArgs e)
@@ -160,6 +119,11 @@ namespace MtG_Project
         private void CardSubtypeLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void deckContentsBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadImg(deckContentsBox.SelectedItem.ToString());
         }
     }
 }

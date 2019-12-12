@@ -29,14 +29,6 @@
         private void InitializeComponent()
         {
             this.viewDeckButton = new System.Windows.Forms.Button();
-            this.cardColorTextBox = new System.Windows.Forms.TextBox();
-            this.cardTypeTextBox = new System.Windows.Forms.TextBox();
-            this.cardSubtypeLabel = new System.Windows.Forms.Label();
-            this.cardTypeLabel = new System.Windows.Forms.Label();
-            this.manaCostTextBox = new System.Windows.Forms.TextBox();
-            this.manaCostLabel = new System.Windows.Forms.Label();
-            this.cardNameTextBox = new System.Windows.Forms.TextBox();
-            this.cardNameLabel = new System.Windows.Forms.Label();
             this.deckContentsBox = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.exitScreenButton = new System.Windows.Forms.Button();
@@ -55,106 +47,32 @@
             this.viewDeckButton.BackColor = System.Drawing.Color.Silver;
             this.viewDeckButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewDeckButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.viewDeckButton.Location = new System.Drawing.Point(315, 305);
-            this.viewDeckButton.Margin = new System.Windows.Forms.Padding(2);
+            this.viewDeckButton.Location = new System.Drawing.Point(472, 469);
             this.viewDeckButton.Name = "viewDeckButton";
-            this.viewDeckButton.Size = new System.Drawing.Size(98, 51);
+            this.viewDeckButton.Size = new System.Drawing.Size(147, 78);
             this.viewDeckButton.TabIndex = 30;
             this.viewDeckButton.Text = "View";
             this.viewDeckButton.UseVisualStyleBackColor = false;
             this.viewDeckButton.Click += new System.EventHandler(this.ViewCollectionButton_Click);
             // 
-            // cardColorTextBox
-            // 
-            this.cardColorTextBox.Location = new System.Drawing.Point(404, 103);
-            this.cardColorTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.cardColorTextBox.Name = "cardColorTextBox";
-            this.cardColorTextBox.Size = new System.Drawing.Size(76, 20);
-            this.cardColorTextBox.TabIndex = 29;
-            // 
-            // cardTypeTextBox
-            // 
-            this.cardTypeTextBox.Location = new System.Drawing.Point(404, 73);
-            this.cardTypeTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.cardTypeTextBox.Name = "cardTypeTextBox";
-            this.cardTypeTextBox.Size = new System.Drawing.Size(76, 20);
-            this.cardTypeTextBox.TabIndex = 28;
-            // 
-            // cardSubtypeLabel
-            // 
-            this.cardSubtypeLabel.AutoSize = true;
-            this.cardSubtypeLabel.Location = new System.Drawing.Point(331, 103);
-            this.cardSubtypeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardSubtypeLabel.Name = "cardSubtypeLabel";
-            this.cardSubtypeLabel.Size = new System.Drawing.Size(62, 13);
-            this.cardSubtypeLabel.TabIndex = 27;
-            this.cardSubtypeLabel.Text = "Card Color: ";
-            this.cardSubtypeLabel.Click += new System.EventHandler(this.CardSubtypeLabel_Click);
-            // 
-            // cardTypeLabel
-            // 
-            this.cardTypeLabel.AutoSize = true;
-            this.cardTypeLabel.Location = new System.Drawing.Point(331, 73);
-            this.cardTypeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardTypeLabel.Name = "cardTypeLabel";
-            this.cardTypeLabel.Size = new System.Drawing.Size(59, 13);
-            this.cardTypeLabel.TabIndex = 26;
-            this.cardTypeLabel.Text = "Card Type:";
-            // 
-            // manaCostTextBox
-            // 
-            this.manaCostTextBox.Location = new System.Drawing.Point(404, 41);
-            this.manaCostTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.manaCostTextBox.Name = "manaCostTextBox";
-            this.manaCostTextBox.Size = new System.Drawing.Size(76, 20);
-            this.manaCostTextBox.TabIndex = 25;
-            // 
-            // manaCostLabel
-            // 
-            this.manaCostLabel.AutoSize = true;
-            this.manaCostLabel.Location = new System.Drawing.Point(331, 41);
-            this.manaCostLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.manaCostLabel.Name = "manaCostLabel";
-            this.manaCostLabel.Size = new System.Drawing.Size(61, 13);
-            this.manaCostLabel.TabIndex = 24;
-            this.manaCostLabel.Text = "Mana Cost:";
-            // 
-            // cardNameTextBox
-            // 
-            this.cardNameTextBox.Location = new System.Drawing.Point(373, 10);
-            this.cardNameTextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.cardNameTextBox.Name = "cardNameTextBox";
-            this.cardNameTextBox.Size = new System.Drawing.Size(219, 20);
-            this.cardNameTextBox.TabIndex = 23;
-            // 
-            // cardNameLabel
-            // 
-            this.cardNameLabel.AutoSize = true;
-            this.cardNameLabel.Location = new System.Drawing.Point(331, 10);
-            this.cardNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardNameLabel.Name = "cardNameLabel";
-            this.cardNameLabel.Size = new System.Drawing.Size(38, 13);
-            this.cardNameLabel.TabIndex = 22;
-            this.cardNameLabel.Text = "Name:";
-            // 
             // deckContentsBox
             // 
             this.deckContentsBox.FormattingEnabled = true;
-            this.deckContentsBox.Location = new System.Drawing.Point(9, 41);
-            this.deckContentsBox.Margin = new System.Windows.Forms.Padding(2);
+            this.deckContentsBox.ItemHeight = 20;
+            this.deckContentsBox.Location = new System.Drawing.Point(14, 63);
             this.deckContentsBox.Name = "deckContentsBox";
-            this.deckContentsBox.Size = new System.Drawing.Size(305, 251);
+            this.deckContentsBox.Size = new System.Drawing.Size(456, 384);
             this.deckContentsBox.TabIndex = 21;
+            this.deckContentsBox.SelectedIndexChanged += new System.EventHandler(this.deckContentsBox_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(417, 305);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(626, 469);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 52);
+            this.button1.Size = new System.Drawing.Size(147, 80);
             this.button1.TabIndex = 20;
             this.button1.Text = "Edit";
             this.button1.UseVisualStyleBackColor = false;
@@ -164,10 +82,9 @@
             this.exitScreenButton.BackColor = System.Drawing.Color.Blue;
             this.exitScreenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitScreenButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.exitScreenButton.Location = new System.Drawing.Point(519, 303);
-            this.exitScreenButton.Margin = new System.Windows.Forms.Padding(2);
+            this.exitScreenButton.Location = new System.Drawing.Point(778, 466);
             this.exitScreenButton.Name = "exitScreenButton";
-            this.exitScreenButton.Size = new System.Drawing.Size(98, 52);
+            this.exitScreenButton.Size = new System.Drawing.Size(147, 80);
             this.exitScreenButton.TabIndex = 19;
             this.exitScreenButton.Text = "Exit";
             this.exitScreenButton.UseVisualStyleBackColor = false;
@@ -178,10 +95,9 @@
             this.saveAdditionButton.BackColor = System.Drawing.Color.Black;
             this.saveAdditionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveAdditionButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.saveAdditionButton.Location = new System.Drawing.Point(216, 303);
-            this.saveAdditionButton.Margin = new System.Windows.Forms.Padding(2);
+            this.saveAdditionButton.Location = new System.Drawing.Point(324, 466);
             this.saveAdditionButton.Name = "saveAdditionButton";
-            this.saveAdditionButton.Size = new System.Drawing.Size(98, 52);
+            this.saveAdditionButton.Size = new System.Drawing.Size(147, 80);
             this.saveAdditionButton.TabIndex = 17;
             this.saveAdditionButton.Text = "Save";
             this.saveAdditionButton.UseVisualStyleBackColor = false;
@@ -192,10 +108,9 @@
             this.addNewButton.BackColor = System.Drawing.Color.DarkGreen;
             this.addNewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addNewButton.Location = new System.Drawing.Point(114, 303);
-            this.addNewButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addNewButton.Location = new System.Drawing.Point(171, 466);
             this.addNewButton.Name = "addNewButton";
-            this.addNewButton.Size = new System.Drawing.Size(98, 52);
+            this.addNewButton.Size = new System.Drawing.Size(147, 80);
             this.addNewButton.TabIndex = 16;
             this.addNewButton.Text = "Add New";
             this.addNewButton.UseVisualStyleBackColor = false;
@@ -204,10 +119,10 @@
             // deckListBox
             // 
             this.deckListBox.FormattingEnabled = true;
-            this.deckListBox.Location = new System.Drawing.Point(334, 171);
-            this.deckListBox.Margin = new System.Windows.Forms.Padding(2);
+            this.deckListBox.ItemHeight = 20;
+            this.deckListBox.Location = new System.Drawing.Point(501, 63);
             this.deckListBox.Name = "deckListBox";
-            this.deckListBox.Size = new System.Drawing.Size(304, 121);
+            this.deckListBox.Size = new System.Drawing.Size(454, 384);
             this.deckListBox.TabIndex = 31;
             this.deckListBox.SelectedIndexChanged += new System.EventHandler(this.deckListBox_SelectedIndexChanged);
             // 
@@ -216,10 +131,9 @@
             this.notInCollectionButton.BackColor = System.Drawing.Color.Red;
             this.notInCollectionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notInCollectionButton.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.notInCollectionButton.Location = new System.Drawing.Point(621, 303);
-            this.notInCollectionButton.Margin = new System.Windows.Forms.Padding(2);
+            this.notInCollectionButton.Location = new System.Drawing.Point(932, 466);
             this.notInCollectionButton.Name = "notInCollectionButton";
-            this.notInCollectionButton.Size = new System.Drawing.Size(98, 52);
+            this.notInCollectionButton.Size = new System.Drawing.Size(147, 80);
             this.notInCollectionButton.TabIndex = 33;
             this.notInCollectionButton.Text = "Not In Collection";
             this.notInCollectionButton.UseVisualStyleBackColor = false;
@@ -227,55 +141,50 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(661, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(992, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(199, 251);
+            this.pictureBox1.Size = new System.Drawing.Size(298, 432);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 34;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(334, 153);
+            this.label1.Location = new System.Drawing.Point(508, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.Size = new System.Drawing.Size(101, 20);
             this.label1.TabIndex = 35;
             this.label1.Text = "List of Decks";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 17);
+            this.label2.Location = new System.Drawing.Point(18, 26);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 36;
             this.label2.Text = "Deck List";
             // 
             // Deck_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 366);
+            this.ClientSize = new System.Drawing.Size(1308, 563);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.notInCollectionButton);
             this.Controls.Add(this.deckListBox);
             this.Controls.Add(this.viewDeckButton);
-            this.Controls.Add(this.cardColorTextBox);
-            this.Controls.Add(this.cardTypeTextBox);
-            this.Controls.Add(this.cardSubtypeLabel);
-            this.Controls.Add(this.cardTypeLabel);
-            this.Controls.Add(this.manaCostTextBox);
-            this.Controls.Add(this.manaCostLabel);
-            this.Controls.Add(this.cardNameTextBox);
-            this.Controls.Add(this.cardNameLabel);
             this.Controls.Add(this.deckContentsBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.exitScreenButton);
             this.Controls.Add(this.saveAdditionButton);
             this.Controls.Add(this.addNewButton);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Deck_Menu";
             this.Text = "Deck Menu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -287,14 +196,6 @@
         #endregion
 
         private System.Windows.Forms.Button viewDeckButton;
-        private System.Windows.Forms.TextBox cardColorTextBox;
-        private System.Windows.Forms.TextBox cardTypeTextBox;
-        private System.Windows.Forms.Label cardSubtypeLabel;
-        private System.Windows.Forms.Label cardTypeLabel;
-        private System.Windows.Forms.TextBox manaCostTextBox;
-        private System.Windows.Forms.Label manaCostLabel;
-        private System.Windows.Forms.TextBox cardNameTextBox;
-        private System.Windows.Forms.Label cardNameLabel;
         private System.Windows.Forms.ListBox deckContentsBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button exitScreenButton;
