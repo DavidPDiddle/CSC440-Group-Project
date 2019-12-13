@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 
 namespace MtG_Project
@@ -21,19 +22,7 @@ namespace MtG_Project
         public HomePage()
         {
             InitializeComponent();
-
-            //FormBorderStyle = FormBorderStyle.None;
         }
-
-        //private void collectionMenuButton_Click(object sender, EventArgs e)
-        //{
-        //    new CollectionMenu().Show();
-        //}
-
-        //private void deckMenuButton_Click(object sender, EventArgs e)
-        //{
-        //    new Deck_Menu().Show();
-        //}
 
         private void CollectionMenuButton_Click(object sender, EventArgs e)
         {
@@ -52,7 +41,14 @@ namespace MtG_Project
 
         private void maximizeButton_Click(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
         }
 
         private void closeWindowButton_Click(object sender, EventArgs e)
@@ -77,10 +73,13 @@ namespace MtG_Project
 
 
         }
-
+        // gets the latest updates from Scryfall's website
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            
+            WebClient webClient = new WebClient();
+            webClient.DownloadFile("https://archive.scryfall.com/json/scryfall-oracle-cards.json",
+                @"C:/Users/15022/Documents/CSC440/scryfall-oracle-cards.json");
+            Deck_Menu.Run_Cmd("C:/Users/15022/Documents/CSC440/Json_Processing.py");
         }
 
         private void HomePage_MouseUp(object sender, MouseEventArgs e)
