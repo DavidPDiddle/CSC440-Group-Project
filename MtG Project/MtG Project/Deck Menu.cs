@@ -65,9 +65,24 @@ namespace MtG_Project
             // write the card name to a file so the python script can read it
             System.IO.File.WriteAllText("C:/Users/15022/Documents/CSC440/card_name.txt", deckContentsBox.SelectedItem.ToString());
             // run a python file to return the uri
-            string card_uri = Run_Cmd("C:/Users/15022/Documents/CSC440/get_card_uri.py")[0];
+            string card_uri = "";
+            try 
+            { 
+                card_uri = Run_Cmd("C:/Users/15022/Documents/CSC440/get_card_uri.py")[0];
+            }
+            catch (ArgumentOutOfRangeException e)
+            {
+                card_uri = "";
+            }
             // load the image
-            pictureBox1.Load(card_uri);
+            if (card_uri.Equals(""))
+            {
+                pictureBox1.Image = pictureBox1.ErrorImage;
+            }
+            else
+            {
+                pictureBox1.Load(card_uri);
+            }
         }
 
         // load the list of decks when the page is loaded
@@ -79,6 +94,7 @@ namespace MtG_Project
         // adds a new deck to the json file
         private void AddNewButton_Click(object sender, EventArgs e)
         {
+            Close();
             new Form1().Show();
         }
 

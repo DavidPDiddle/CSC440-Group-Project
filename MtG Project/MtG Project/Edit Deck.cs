@@ -50,5 +50,15 @@ namespace MtG_Project
             new Deck_Menu().Show();
             Close();
         }
+
+        private void Edit_Deck_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtb_deck_contents_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

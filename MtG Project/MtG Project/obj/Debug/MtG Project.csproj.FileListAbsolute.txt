@@ -75,3 +75,4 @@ C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CopyComplete
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Edit_Deck.resources
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Form1.resources
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Edit_Collection.resources

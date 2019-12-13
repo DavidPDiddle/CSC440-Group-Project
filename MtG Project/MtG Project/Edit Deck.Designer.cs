@@ -60,6 +60,7 @@
             this.rtb_deck_contents.Size = new System.Drawing.Size(381, 506);
             this.rtb_deck_contents.TabIndex = 2;
             this.rtb_deck_contents.Text = "";
+            this.rtb_deck_contents.TextChanged += new System.EventHandler(this.rtb_deck_contents_TextChanged);
             // 
             // label2
             // 
@@ -118,6 +119,7 @@
             this.Controls.Add(this.tb_deck_name);
             this.Name = "Edit_Deck";
             this.Text = "Edit_Deck";
+            this.Load += new System.EventHandler(this.Edit_Deck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
