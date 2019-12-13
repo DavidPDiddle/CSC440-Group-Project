@@ -59,6 +59,12 @@
     <Compile Include="Edit Deck.Designer.cs">
       <DependentUpon>Edit Deck.cs</DependentUpon>
     </Compile>
+    <Compile Include="New Deck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Deck.Designer.cs">
+      <DependentUpon>New Deck.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit Deck.resx">
       <DependentUpon>Edit Deck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Deck.resx">
+      <DependentUpon>New Deck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

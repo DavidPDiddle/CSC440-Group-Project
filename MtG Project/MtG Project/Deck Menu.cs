@@ -79,7 +79,7 @@ namespace MtG_Project
         // adds a new deck to the json file
         private void AddNewButton_Click(object sender, EventArgs e)
         {
-
+            new Form1().Show();
         }
 
         private void ExitScreenButton_Click(object sender, EventArgs e)
