@@ -125,5 +125,16 @@ namespace MtG_Project
         {
             LoadImg(deckContentsBox.SelectedItem.ToString());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+            new Form1().Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,3 +73,4 @@ C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\MtG Project.pdb
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\bin\Debug\Newtonsoft.Json.dll
 C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG Project.csproj.CopyComplete
+C:\Users\15022\Documents\CSC440\Group Project\MtG Project\MtG Project\obj\Debug\MtG_Project.Form1.resources

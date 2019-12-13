@@ -53,6 +53,12 @@
     <Compile Include="Deck Menu.Designer.cs">
       <DependentUpon>Deck Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Deck Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deck Edit.Designer.cs">
+      <DependentUpon>Deck Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     <Compile Include="RoundedButtons.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Deck Edit.resx">
+      <DependentUpon>Deck Edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Deck Menu.resx">
       <DependentUpon>Deck Menu.cs</DependentUpon>
     </EmbeddedResource>
