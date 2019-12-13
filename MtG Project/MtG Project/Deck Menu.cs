@@ -102,6 +102,7 @@ namespace MtG_Project
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+            new Edit_Deck().Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

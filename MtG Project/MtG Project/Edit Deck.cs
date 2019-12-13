@@ -16,5 +16,10 @@ namespace MtG_Project
         {
             InitializeComponent();
         }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
