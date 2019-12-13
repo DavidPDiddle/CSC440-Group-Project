@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lv_deck_contents = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.deckContentsBox.FormattingEnabled = true;
             this.deckContentsBox.ItemHeight = 20;
-            this.deckContentsBox.Location = new System.Drawing.Point(14, 63);
+            this.deckContentsBox.Location = new System.Drawing.Point(578, 134);
             this.deckContentsBox.Name = "deckContentsBox";
             this.deckContentsBox.Size = new System.Drawing.Size(456, 384);
             this.deckContentsBox.TabIndex = 21;
@@ -129,11 +130,22 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Deck List";
             // 
+            // lv_deck_contents
+            // 
+            this.lv_deck_contents.HideSelection = false;
+            this.lv_deck_contents.Location = new System.Drawing.Point(12, 63);
+            this.lv_deck_contents.Name = "lv_deck_contents";
+            this.lv_deck_contents.Size = new System.Drawing.Size(458, 384);
+            this.lv_deck_contents.TabIndex = 37;
+            this.lv_deck_contents.UseCompatibleStateImageBehavior = false;
+            this.lv_deck_contents.SelectedIndexChanged += new System.EventHandler(this.lv_deck_contents_SelectedIndexChanged);
+            // 
             // Deck_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1308, 563);
+            this.Controls.Add(this.lv_deck_contents);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -159,5 +171,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView lv_deck_contents;
     }
 }

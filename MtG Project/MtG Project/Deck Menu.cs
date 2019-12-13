@@ -136,5 +136,10 @@ namespace MtG_Project
         {
 
         }
+
+        private void lv_deck_contents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadImg(lv_deck_contents.SelectedItems.ToString());
+        }
     }
 }
