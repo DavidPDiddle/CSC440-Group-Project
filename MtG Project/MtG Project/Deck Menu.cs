@@ -27,7 +27,7 @@ namespace MtG_Project
             LoadDecks(sender, e);
         }
         // runs an external python script and gets the stdout as a result array of strings
-        public List<string> Run_Cmd(string cmd)
+        public static List<string> Run_Cmd(string cmd)
         {
             ProcessStartInfo start = new ProcessStartInfo();
             start.FileName = "C:/Python/python.exe";
