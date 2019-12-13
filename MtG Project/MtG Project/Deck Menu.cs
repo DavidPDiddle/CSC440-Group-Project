@@ -82,16 +82,6 @@ namespace MtG_Project
 
         }
 
-        private void ViewCollectionButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void SaveAdditionButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void ExitScreenButton_Click(object sender, EventArgs e)
         {
             Close();
@@ -104,23 +94,6 @@ namespace MtG_Project
             deckContentsBox.DataSource = Run_Cmd("C:/Users/15022/Documents/CSC440/get_deck_contents.py");
         }
 
-        private void allCardsButton_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        private void fromCollectionButton_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-
-        private void CardSubtypeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void deckContentsBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadImg(deckContentsBox.SelectedItem.ToString());
@@ -129,17 +102,11 @@ namespace MtG_Project
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-            new Form1().Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void lv_deck_contents_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            LoadImg(lv_deck_contents.SelectedItems.ToString());
         }
     }
 }
